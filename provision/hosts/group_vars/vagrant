@@ -1,0 +1,6 @@
+symfony_mysql_user: vagrant
+symfony_mysql_name: vagrant
+symfony_mysql_password: Ycu2ND46T89Vfj4AjnvU6sn9A7r76zHU
+symfony_secret: Hwpu3pG56JUa2zic2753NxQF5v68PPAr
+
+symfony_project_name: symfony

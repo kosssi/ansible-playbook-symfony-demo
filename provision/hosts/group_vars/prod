@@ -1,0 +1,4 @@
+symfony_mysql_user: prod
+symfony_mysql_name: prod
+symfony_mysql_password: 2AF3puqu9NPM4nEnzP4kC3Beu492Nc77
+symfony_secret: qtByQzURSFjx5784RQ3469jx66PR7imu

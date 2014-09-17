@@ -1,0 +1,5 @@
+kosssi_demo:
+    resource: "@KosssiDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

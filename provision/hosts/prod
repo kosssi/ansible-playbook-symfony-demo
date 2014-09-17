@@ -1,0 +1,8 @@
+[prod]
+symfony.prod
+
+[webservers:children]
+prod
+
+[dbservers:children]
+prod

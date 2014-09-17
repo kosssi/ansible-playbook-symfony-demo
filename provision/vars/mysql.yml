@@ -1,0 +1,11 @@
+---
+
+# List of databases to be created
+mysql_databases:
+  - name: "{{ symfony_mysql_name }}"
+
+# List of users to be created
+mysql_users:
+  - name: "{{ symfony_mysql_user }}"
+    pass: "{{ symfony_mysql_password }}"
+    priv: "*.*:ALL"

@@ -1,0 +1,31 @@
+---
+
+##
+## DBSERVER
+##
+
+- name: Provision database
+  hosts: dbservers
+  sudo: yes
+  vars_files:
+    - vars/mysql.yml
+  roles:
+    - { role: Ansibles.mysql, tags: mysql }
+
+
+##
+## WEBSERVER
+##
+
+- name: Provision website
+  hosts: webservers
+  sudo: yes
+  vars_files:
+    - vars/php.yml
+    - vars/apache.yml
+  roles:
+    - { role: kosssi.php, tags: php }
+    - { role: kosssi.composer, tags: composer }
+    - { role: kosssi.apache, tags: apache }
+    - { role: www-data, tags: www-data }
+    - { role: symfony, tags: symfony }

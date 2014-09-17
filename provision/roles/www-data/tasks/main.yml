@@ -1,0 +1,20 @@
+---
+
+- name: Grant www-data ssh rights
+  user:
+    name=www-data
+    shell=/bin/bash
+
+- name: Grant great right
+  file:
+    path="{{ item }}"
+    state=directory
+    owner=www-data
+    group=www-data
+  with_items:
+    - /var/www
+    - /var/www/symfony
+    - /var/www/symfony/shared
+    - /var/www/symfony/shared/app
+    - /var/www/symfony/shared/app/config
+    - /tmp/session

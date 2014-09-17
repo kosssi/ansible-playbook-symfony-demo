@@ -1,0 +1,4 @@
+---
+
+- include: parameters.yml
+- include: doctrine.yml

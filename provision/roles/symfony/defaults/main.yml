@@ -1,0 +1,2 @@
+symfony_project_name: symfony
+symfony_parameters_path: /var/www/{{ symfony_project_name }}/shared/app/config/parameters.yml

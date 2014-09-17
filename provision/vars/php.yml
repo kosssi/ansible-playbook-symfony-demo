@@ -1,0 +1,17 @@
+---
+
+php_install:
+  - php5
+  - php5-intl
+  - php5-mysql
+  - php5-curl
+
+php_configure:
+  - file: /etc/php5/cli/php.ini
+    values:
+      - { section: date, key: date.timezone, value: 'Europe/Paris' }
+      - { section: session, key: session.save_path, value: '/tmp/session' }
+  - file: /etc/php5/apache2/php.ini
+    values:
+      - { section: date, key: date.timezone, value: 'Europe/Paris' }
+      - { section: session, key: session.save_path, value: '/tmp/session' }

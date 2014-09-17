@@ -1,0 +1,7 @@
+---
+
+- name: Update database schema
+  shell:
+    php /var/www/{{ symfony_project_name }}/current/app/console doctrine:schema:update --force
+  register: result
+  changed_when: result.stdout.startswith('Nothing to update') == false

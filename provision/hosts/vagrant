@@ -1,0 +1,8 @@
+[vagrant]
+symfony.dev
+
+[webservers:children]
+vagrant
+
+[dbservers:children]
+vagrant
